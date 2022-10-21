@@ -1,3 +1,7 @@
+<?php
+require_once('inc/config.php');
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
