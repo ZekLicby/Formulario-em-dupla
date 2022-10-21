@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100vh;
+}
+
+body{
+    background-image: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0.2)), url("../images/spiderweb-for-halloween-background-free-vector.jpg");
+}
+
+form{
+    background-color: rgba(0,255,0,0.5);
+    width: 50%;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+fieldset{
+    background-color: rgba(255,255,0,0.5);
+}
+
+legend{
+
+}
