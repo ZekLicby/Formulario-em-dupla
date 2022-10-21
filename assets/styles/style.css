@@ -4,7 +4,11 @@
     box-sizing: border-box;
 }
 
-html, body{
+html{
+    font-size: 62,5%;
+}
+
+body{
     height: 100vh;
 }
 
@@ -16,13 +20,34 @@ form{
     background-color: rgba(0,255,0,0.5);
     width: 50%;
     margin: 0 auto;
-    padding: 5px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
 }
 
 fieldset{
-    background-color: rgba(255,255,0,0.5);
+    background-color: rgb(242, 133, 0, 0.8);
+    border: 2px solid rgb(0, 0, 0);
+    padding: 10px;
+    border-radius: 10px;
 }
 
 legend{
+    text-align: center;
+    padding: 7px;
+    border: 2px solid rgb(0, 0, 0, 0.5);
+    background-image: linear-gradient(to top, rgb(242, 133, 0, 0.8), rgba(0,255,0,0.5));
+    border-radius: 10px;
+}
+
+label{
+
+}
+
+input{
+    text-align: center;
+}
+
+button{
 
 }
