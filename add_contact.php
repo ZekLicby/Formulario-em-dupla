@@ -2,8 +2,14 @@
 // verificando o método
 
 
-    if($_SERVER['REQUEST_METHOD'] != 'GET'){
+    if($_SERVER['REQUEST_METHOD'] != 'POST'){
         die('acesso negado');
+    }
+
+    
+  
+    if(($_POST['nome']) == '' || $_POST['senha'] =='' || $_POST['email'] ==''){
+        die('a');
     }
 
     require_once('inc/EasyPDO.php');
@@ -16,9 +22,9 @@
 // prevent SQL injection
 
 $parametros = [
-    ':nome'  => $_GET['nome'],
-    ':senha' => $_GET['senha'],
-    ':email' => $_GET['email'],
+    ':nome'  => $_POST['nome'],
+    ':senha' => $_POST['senha'],
+    ':email' => $_POST['email'],
 ];
 
 $pdo-> query("INSERT INTO usuarios VALUES(0, :nome, :email, :senha)",$parametros);
